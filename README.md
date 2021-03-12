@@ -52,7 +52,7 @@
 在本文档中，除非另有说明：
 
 1. _class_ 类 表示 _ordinary class_ 普通的类、_enum class_ 枚举类、_interface_ 接口或 _annotation_ 注解类型。
-2. _member_ 成员 表示 _nested class_ 嵌套类、_field_ 字段、_method_ 方法或 _constructor_ 者构造方法，即除初始化方法和注释之外，类的所有最顶层内容。
+2. _member_ 成员 表示 _nested class_ 嵌套类、_field_ 字段、_method_ 方法或 _constructor_ 构造方法，即除初始化方法和注释之外，类的所有最顶层内容。
 3. _comment_ 注释 表示 _implementation comments_ 实现注释。我们不使用术语 _documentation comments_，而是使用（在 Java 中）更通用的术语 _Javadoc_。
 
 其它出现在本文档中的术语将另作说明。
@@ -560,7 +560,7 @@ public String getNameIfPresent() { ... }
 
 常量使用 `CONSTANT_CASE` 的格式命名：全大写，单词之间以下划线分隔。但常量究竟意味着什么？
 
-常量是 static final 修饰的字段，常量的内容是深不可变的（deeply immutable)，并且常量的方法是没有副作用的。这包括了原始类型、字符串、不可变类型、不可变类型的不可变集合。如果实例的任何外在状态是可变的，那它就不属于常量。仅仅保证实例引用的不可变属性是不够的。例如：
+常量是 static final 修饰的字段，常量的内容是一成不变的（deeply immutable)，并且常量的方法是没有副作用的。这包括了原始类型、字符串、不可变类型、不可变类型的不可变集合。如果实例的任何外在状态是可变的，那它就不属于常量。仅仅保证实例引用的不可变属性是不够的。例如：
 
 ```java
 // Constants
